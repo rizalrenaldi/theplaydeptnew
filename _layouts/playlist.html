@@ -1,0 +1,86 @@
+---
+layout: default
+title: playlist
+---
+
+<section class="viewer pt-5 bg-playday" style="background:url('{{ page.cover }}')no-repeat top center;">
+  <div class="separator"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 playday-content order-12 order-md-1 d-flex flex-column justify-content-left align-items-start">
+            <div class="mb-auto p-2">
+              <h2>{{ page.title }}</h2>
+              <p>by <a href="{{ page.authorurl }}">{{ page.author }}</a></p>
+              <div class="songlist">
+                <ul id="songlist">
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid1 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song1 }}</h6>
+                    <p class="lead">{{ page.songs.artist1 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid2 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song2 }}</h6>
+                    <p class="lead">{{ page.songs.artist2 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid3 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song3 }}</h6>
+                    <p class="lead">{{ page.songs.artist3}}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid4 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song4 }}</h6>
+                    <p class="lead">{{ page.songs.artist4 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid5 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song5 }}</h6>
+                    <p class="lead">{{ page.songs.artist5 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid6 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song6 }}</h6>
+                    <p class="lead">{{ page.songs.artist6 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid7 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song7 }}</h6>
+                    <p class="lead">{{ page.songs.artist7 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid8 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song8 }}</h6>
+                    <p class="lead">{{ page.songs.artist8 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid9 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song9 }}</h6>
+                    <p class="lead">{{ page.songs.artist9 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+                  <li class="song" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/{{ page.songs.youtubeid10 }}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                    <h6 class="mb-0">{{ page.songs.song10 }}</h6>
+                    <p class="lead">{{ page.songs.artist10 }}</p>
+                    <div class="eq-playlist"><span class="eq1"></span><span class="eq2"></span><span class="eq3"></span></div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="px-2 socmed">
+              <a class="btn btn-primary btn-lg mr-2" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Facebook" role="button"><svg viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg><!--[if lt IE 9]><em>Facebook</em><![endif]--> <span>Share</span></a>
+              <a class="btn btn-primary btn-lg" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Twitter" role="button"><svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg><!--[if lt IE 9]><em>Twitter</em><![endif]--> Tweet</a></div>
+          </div>
+          <div class="col-md-8 playday-content order 1 order-md-12">
+            <div class="videoWrapper">
+            <iframe id="vid_frame" width="100%" height="600px" src="https://www.youtube.com/embed/{{ page.songs.youtubeid1 }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>

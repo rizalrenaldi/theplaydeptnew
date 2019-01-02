@@ -1,0 +1,83 @@
+---
+layout: default
+title: Playday
+pagination:
+  enabled: true
+  category: playdays
+  per_page: 12
+---
+
+<section class="top-archive" data-transition="fadeIn" style="background: url('/assets/images/playdays.jpg')no-repeat center center;">
+  <div class="separator"></div>
+  <div class="container h-75">
+    <div class="row h-75">
+      <h1 class="sr-only">Playdays Archive</h1>
+    </div>
+  </div>
+</section>
+
+
+<section id="playdays" class="mb-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 p-5 feat-box radius">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="category-title">
+              <svg id="i-music" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#d9534f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M11 25 L11 6 24 3 24 23 M11 13 L24 10" />
+              <ellipse cx="7" cy="25" rx="4" ry="5" />
+              <ellipse cx="20" cy="23" rx="4" ry="5" />
+              </svg>
+
+            <h2 class="text-magenta">The Playday</h2>
+            <p class="lead">Curated song of the day. Updated daily, or not.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-right text-grey">
+          <h1>{{ paginator.page }}/{{ paginator.total_pages }}</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        {% for post in paginator.posts %}
+        <div class="col-lg-4 col-md-12 py-4">
+          <a href="{{ post.url }}">
+            <div class="box d-flex flex-column text-center justify-content-center thumb" style="background: url('{{ post.cover }}')no-repeat center center; background-size: cover;">
+              <div class="overlay-box"></div>
+              <div class="playday-title">
+                <h1>{{ post.title }}</h1>
+                <small>by {{ post.artist }}</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      {% if paginator.total_pages > 1 %}
+<ul class="text-center">
+  {% if paginator.previous_page %}
+  <li class="d-inline">
+    <a class="btn btn-outline-secondary btn-lg" href="{{ site.url }}{{ paginator.previous_page_path }}">Newer</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="d-inline">
+    <a class="btn btn-outline-secondary btn-lg" href="{{ site.url }}{{ paginator.next_page_path }}">Older</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+
+    </div>
+  </div>
+</div>

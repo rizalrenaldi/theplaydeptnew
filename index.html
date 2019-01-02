@@ -1,0 +1,213 @@
+---
+layout: default
+title: Home
+---
+
+
+{% for post in site.categories.playdays limit:1 %}
+  <section class="top" data-transition="fadeIn" style="background: url('{{ post.cover }}')no-repeat top center;">
+    <div class="separator"></div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-6 h-75 d-flex pb-5 align-items-end">
+          <div class="headline mb-5 pb-5">
+              <button class="equalizer">
+                <span class="eq1"></span>
+                <span class="eq2"></span>
+                <span class="eq3"></span>
+              </button>
+            <a href="{{ post.url }}">
+              <small>Featured Playday</small>
+              <h1>{{ post.title }}</h1>
+              <h4>by {{ post.artist }}</h4>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 h-75 d-flex pb-5 text-md-left text-lg-right align-items-end">
+          <div class="headline mb-5 pb-5">
+            <p><a class="btn btn-success btn-lg d-inline ml-2" href="{{ post.artist_website }}" target="_blank" role="button">{{ post.artist }} website</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endfor %}
+
+<div class="bg-wrapper">
+<section id="playdays" class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 p-5 feat-box radius">
+        <div class="col-lg-6 col-md-12">
+          <div class="category-title">
+              <svg id="i-music" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#d9534f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M11 25 L11 6 24 3 24 23 M11 13 L24 10" />
+              <ellipse cx="7" cy="25" rx="4" ry="5" />
+              <ellipse cx="20" cy="23" rx="4" ry="5" />
+              </svg>
+              <!-- <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#d9534f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
+              </svg> -->
+            <h2 class="text-magenta">The Playday</h2>
+            <p class="lead">Curated song of the day. Updated daily, or not.</p>
+          </div>
+        </div>
+        <div class="row">
+          {% for post in site.categories.playdays offset:1 limit:6 %}
+          <div class="col-lg-4 col-md-12 py-4">
+            <a href="{{ post.url }}">
+              <div class="box d-flex flex-column text-center justify-content-center thumb" style="background: url('{{ post.cover }}')no-repeat center center; background-size: cover;">
+                <div class="overlay-box"></div>
+                <div class="playday-title">
+                  <h1>{{ post.title }}</h1>
+                  <small>by {{ post.artist }}</small>
+                </div>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+
+          <div class="col-md-12 p-4 text-right">
+            <a class="btn btn-danger btn-lg" href="/playdays/" role="button">See all Playdays</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <section id="divider">
+     <div class="container-fluid light-grey">
+       <div class="row">
+         <div class="ad-1"></div>
+       </div>
+     </div>
+   </section>
+
+   <section id="playlists" class="category">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="category-title">
+              <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#52a3d7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
+              </svg>
+              <h2 class="text-blue">The Playlists</h2>
+              <p class="lead">Mixtape kind of things, curated by our selected listeners.</p>
+            </div>
+          </div>
+            <div class="col-md-12 py-4 mb-5">
+              <div class="row">
+                {% for post in site.categories.playlists limit:6 %}
+                <div class="col-md-4 my-3">
+                  <a href="{{ post.url }}">
+                    <div class="box-playlist mb-5 mb-lg-0 d-flex flex-column p-4 justify-content-end" style="background: url('{{ post.cover }}')no-repeat center center; background-size: cover;">
+                      <div class="overlay-box"></div>
+                      <div class="playlist-title">
+                      <h2>{{ post.title }}</h2>
+                      <p>By {{ post.author }}</p>
+                      <small>Featuring: {{ post.excerpt }}</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-md-12 p-4 text-right">
+              <a class="btn btn-info btn-lg" href="/playlists/" role="button">See all Playlist</a>
+            </div>
+          </div>
+
+        </div>
+   </section>
+
+   <section id="playmakers">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 mb-4">
+           <div class="category-title">
+             <svg id="i-flag" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#02B875" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M6 2 L6 30 M6 6 L26 6 20 12 26 18 6 18" />
+              </svg>
+
+             <h2 class="text-green">The Playmakers</h2>
+             <p class="lead">Thoughts beyond music and stuff. Opinionated or not, the freedom is yours.</p>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         {% for post in site.categories.playmakers limit:6 %}
+         <div class="col-md-4">
+           <a href="{{ post.url }}">
+           <div class="box-small d-flex flex-column p-4 justify-content-end" style="background: url('{{ post.cover }}')no-repeat center center; background-size: cover;">
+           </div>
+
+             <div class="playground-detail p-2 mt-4">
+               <h4>{{ post.title }}</h4>
+               <p class="lead">{{ post.excerpt }}</p>
+               <small>by {{ post.author }}</small>
+             </div>
+           </a>
+         </div>
+         {% endfor %}
+
+         <div class="col-md-12 text-right">
+           <div class="px-4">
+             <a class="btn btn-success btn-lg" href="/playmakers/" role="button">See all Playmaker</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+</div>
+
+  <section id="artists">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-md-12 pb-4">
+          <h2>Artists Cloud</h2>
+        </div>
+        <div class="col-md-12">
+          <input id="toggle" type="checkbox">
+          <label id="togglelabel" class="btn btn-success btn-lg" for="toggle">Show All</label>
+          <ul id="artistlist">
+            {% for post in site.categories.playdays %}
+              <li><a href="{{ post.url }}">{{ post.artist }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% include subscribe.html %}
+
+<section id="lyrics">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div id="lyric"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="what" style="background:url('assets/images/bumper.jpg')no-repeat left center;background-size:contain;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-right pr-5 my-5">
+        <h1>The Play Dept.<br>curates good music.</h1>
+      </div>
+      <div class="col-md-6 my-5">
+        <p>No more, no less. No crappy music. No negative review. Genre-free, era-free. The Play Dept. believes that good music is a good music, regardless anything surrounds it.</p>
+        <p>The Play Dept. currently managed by <a href="https://twitter.com/rizalrenaldi">@rizalrenaldi</a> and <a href="https://twitter.com/awekh">@awekh</a>. Let us know if you want to <span class="text-yellow">contribute</span>.</p>
+      </div>
+    </div>
+  </div>
+</section>

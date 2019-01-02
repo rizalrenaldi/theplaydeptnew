@@ -1,0 +1,65 @@
+---
+layout: playlist
+title:  Morning 5K
+author: Andri Permana
+wording: A morning 5K is always easy, an enjoyable half hour routine to start your day.
+authorurl: http://instagram.com/awekh
+date:   2018-06-26 06:30:00 +0700
+last_modified_at:  2018-06-26 06:30:00 +0700
+excerpt: "Gorillaz, Arctic Monkey, Red Hot Chili Peppers"
+categories: playlists
+cover: /assets/images/posts/morning5k.jpg
+tags:  
+- slow
+- chill
+- music
+- pond
+- noise
+- wow
+- faces
+- high
+- soul
+- beat
+
+songs:
+  song1: Feel Good Inc.
+  artist1: Gorillaz
+  youtubeid1: HyHNuVaZJ-k
+
+  song2: Scar Tissue
+  artist2: Red Hot Chili Peppers
+  youtubeid2: mzJj5-lubeM
+
+  song3: Dancing Shoes
+  artist3: Arctic Monkeys
+  spotifyid3: 3aQELo7tXyI
+
+  song4: Empire State Of Mind
+  artist4: Jay-Z
+  youtubeid4: -rDZwRI4SFI
+
+  song5: Someday
+  artist5: The Strokes
+  spotifyid5: knU9gRUWCno
+
+  song6: I Need A Dollar
+  artist6: Aloe Blacc
+  youtubeid6: iR6oYX1D-0w
+
+  song7: Parklife
+  artist7: Blur
+  youtubeid7: YSuHrTfcikU
+
+  song8: Rabbit Hole
+  artist8: Blink-182
+  youtubeid8: 0OGJNnMRw8Y
+
+  song9: Adventure Of A Lifetime
+  artist9: Coldplay
+  youtubeid9: QtXby3twMmI
+
+  song10: Take Me Out
+  artist10: Franz Ferdinand
+  youtubeid10: Ijk4j-r7qPA
+
+---

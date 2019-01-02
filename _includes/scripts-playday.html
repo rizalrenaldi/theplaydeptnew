@@ -1,0 +1,35 @@
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="{{ site.url }}/assets/js/barba.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/main.js"></script>
+<script src="{{ site.url }}/assets/js/scroll.js"></script>
+<script src="{{ site.url }}/assets/js/collapse.js"></script>
+<script src="{{ site.url }}/assets/js/quote.js"></script>
+<script src="{{ site.url }}/assets/js/spotify.js"></script>
+
+<script>
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 50) {
+    $('nav').removeClass("py-md-4");
+    $('.navbar').css("background", "#222");
+  } else {
+    $('nav').addClass("py-md-4");
+    $('.navbar').css("background", "transparent");
+  }
+});
+</script>
+
+{% if page.author %}
+<script>
+$(document).ready(function(){
+
+  $(function() {
+    $('.song').on('click', function ( e ) {
+        e.preventDefault();
+        $(this).parents('#songlist').find('.active').removeClass('active').end().end().addClass('active');
+
+    });
+});
+
+});
+</script>
+{% endif %}
