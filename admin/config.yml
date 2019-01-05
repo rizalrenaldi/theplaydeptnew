@@ -21,7 +21,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Modifed Date", name: "last_modified_at", widget: "datetime"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Categories", name: "categories", widget: "select", options: ["playday", "playlist", "post"], default: "playday"}
+      - {label: "Categories", name: "categories", widget: "select", options: ["playdays", "playlists", "playmakers"], default: "playdays"}
       - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Youtube Video ID", name: "youtubeid", widget: "string"}
       - {label: "Post Image", name: "cover", widget: "image"}
