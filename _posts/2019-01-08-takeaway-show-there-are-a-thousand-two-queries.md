@@ -1,6 +1,6 @@
 ---
 layout: playday
-title: 'Takeaway Show: There Are a Thousand & Two Queries'
+title: There Are a Thousand & Two Queries
 artist: Helena Deland
 date: '2019-01-08T09:31:18+07:00'
 last_modified_at: '2019-01-08T09:31:18+07:00'
