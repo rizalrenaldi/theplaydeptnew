@@ -1,7 +1,7 @@
 ---
 layout: playday
 title: Kitty Sucker
-artist: Frank Carter and The Rattlesnakes
+artist: Frank Carter & The Rattlesnakes
 date: '2020-04-14T07:59:06+07:00'
 last_modified_at: '2020-04-14T07:59:06+07:00'
 excerpt: I'm a punk rock renegade. Tattooed motherfucker.
