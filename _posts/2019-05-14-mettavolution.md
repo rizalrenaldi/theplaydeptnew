@@ -9,6 +9,6 @@ categories: playdays
 tags: rodrigoygabriela
 youtubeid: 4g-Z13qTcBA
 cover: /assets/images/posts/ryg.jpg
-artist_website: 'http://http://www.rodgab.com/'
+artist_website: 'http://www.rodgab.com/'
 ---
 
